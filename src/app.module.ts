@@ -8,10 +8,10 @@ import { AccountsModule } from './accounts/accounts.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot('mongodb://mongo-rabbitmq:27017/'),
+    MongooseModule.forRoot('mongodb://balamu-mongo:27017/'),
     AccountsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}

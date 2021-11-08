@@ -6,7 +6,7 @@ import { UpdateAccountDto } from './dto/update-account.dto';
 
 @Controller()
 export class AccountsController {
-  constructor(private readonly accountsService: AccountsService) { }
+  constructor(private readonly accountsService: AccountsService) {}
 
   @MessagePattern('createAccount')
   create(@Payload() createAccountDto: CreateAccountDto) {
